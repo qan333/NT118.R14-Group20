@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6FF"
+    android:fillViewport="true"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnBack"
+                android:layout_width="36dp"
+                android:layout_height="42dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="←"
+                android:textColor="#68758A"
+                android:textSize="22sp"
+                android:contentDescription="Quay lại" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hồ Sơ"
+                android:textColor="#172033"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@drawable/bg_recovery_icon"
+                android:gravity="center"
+                android:text="♙"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- ACCOUNT SUMMARY -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_profile_card"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:background="@drawable/bg_recovery_badge"
+                android:gravity="center"
+                android:text="👩🏻"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/tvProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Lê Nguyễn Phương Vy"
+                android:textColor="#172033"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvProfileEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="lnpvy0516@gmail.com"
+                android:textColor="#68758A"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_recovery_badge"
+                    android:padding="7dp"
+                    android:text="🔥 14 ngày"
+                    android:textColor="#8A6500"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tvCurrentBand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_recovery_badge"
+                    android:padding="7dp"
+                    android:text="◎ Band hiện tại: 6.5"
+                    android:textColor="#154378"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- LEARNING GOAL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_profile_card"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎯  Mục tiêu học tập                         Chỉnh sửa"
+                android:textColor="#172033"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvProfileTargetBand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_recovery_badge"
+                android:padding="10dp"
+                android:text="🏆  Band mục tiêu: 7.0 Overall"
+                android:textColor="#154378"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvProfileExamDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="#F5F8FD"
+                android:padding="10dp"
+                android:text="▣  Ngày thi dự kiến: Chưa chọn"
+                android:textColor="#34445A"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tvProfileStudyTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="#F5F8FD"
+                android:padding="10dp"
+                android:text="◷  Mục tiêu học mỗi ngày: 30 phút/ngày"
+                android:textColor="#34445A"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <!-- PERSONAL INFORMATION -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_profile_card"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="▣  Thông tin cá nhân"
+                android:textColor="#172033"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Họ và tên"
+                android:textColor="#68758A"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/edtProfileName"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@drawable/bg_login_input"
+                android:hint="Nhập họ và tên"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:text="Lê Nguyễn Phương Vy"
+                android:textColor="#172033"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="✉  Địa chỉ Email"
+                android:textColor="#68758A"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/edtProfileEmail"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@drawable/bg_login_input"
+                android:hint="Nhập email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:text="lnpvy0516@gmail.com"
+                android:textColor="#172033"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="☎  Số điện thoại"
+                android:textColor="#68758A"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/edtProfilePhone"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@drawable/bg_login_input"
+                android:hint="Nhập số điện thoại"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:text="0949797399"
+                android:textColor="#172033"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- SETTINGS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_profile_card"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⚙  Cài đặt &amp; Tiện ích"
+                android:textColor="#172033"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="34dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="🔔"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Thông báo nhắc học"
+                    android:textColor="#34445A"
+                    android:textSize="12sp" />
+
+                <Switch
+                    android:id="@+id/swNotifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:contentDescription="Bật hoặc tắt thông báo nhắc học" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="34dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="🌙"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Chế độ ban đêm"
+                    android:textColor="#34445A"
+                    android:textSize="12sp" />
+
+                <Switch
+                    android:id="@+id/swDarkMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:contentDescription="Bật hoặc tắt chế độ ban đêm" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:text="🌐   Ngôn ngữ giao diện: Tiếng Việt   ›"
+                android:textColor="#34445A"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/btnMicrophone"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:text="🎙   Quyền micro và âm thanh   ›"
+                android:textColor="#34445A"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/btnChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:text="🔐   Đổi mật khẩu   ›"
+                android:textColor="#34445A"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_recovery_badge"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="⇥  Đăng xuất tài khoản   →"
+                android:textColor="#A63838"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- SAVE -->
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#154378"
+            android:text="✓  Lưu thay đổi"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

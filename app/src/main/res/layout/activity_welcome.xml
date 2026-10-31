@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6FF"
+    android:fillViewport="true"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="22dp"
+        android:paddingTop="22dp"
+        android:paddingEnd="22dp"
+        android:paddingBottom="18dp">
+
+        <!-- Logo -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_login_input"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="◉ IELTSPro"
+                android:textColor="#154378"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="ACADEMIC"
+                android:textColor="#154378"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="• Lộ trình học thành thói quen"
+            android:textColor="#52647A"
+            android:textSize="12sp" />
+
+        <!-- Hero illustration -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="285dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_welcome_hero"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IELTS"
+                android:textColor="#154378"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:lineSpacingExtra="8dp"
+                android:text="READING  •  LISTENING\nWRITING  •  SPEAKING"
+                android:textColor="#52647A"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_login_input"
+                android:padding="10dp"
+                android:text="✦ Học vui &amp; nhẹ nhàng"
+                android:textColor="#154378"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Main title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:text="Chạm tới Band mục tiêu,\ntừng bước một"
+            android:textColor="#172033"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:text="Luyện đủ 4 kỹ năng Reading, Listening, Writing,\nSpeaking mỗi ngày, nhẹ nhàng mà hiệu quả"
+            android:textColor="#68758A"
+            android:textSize="13sp" />
+
+        <!-- Start button -->
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="22dp"
+            android:backgroundTint="#154378"
+            android:text="Bắt đầu  ➜"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!-- Existing account button -->
+        <Button
+            android:id="@+id/btnExistingAccount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="♙  Tôi đã có tài khoản"
+            android:textAllCaps="false"
+            android:textColor="#172033"
+            android:textSize="14sp" />
+
+        <!-- Feature cards -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_login_input"
+                android:gravity="center"
+                android:text="♧\nChữa văn AI"
+                android:textColor="#34445A"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_login_input"
+                android:gravity="center"
+                android:text="◷\nĐo tốc độ đọc"
+                android:textColor="#34445A"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_login_input"
+                android:gravity="center"
+                android:text="⚙\nChuẩn Cam 19"
+                android:textColor="#34445A"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <!-- Terms -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Bằng việc tiếp tục, bạn đồng ý với Điều khoản và Chính sách bảo mật"
+            android:textColor="#68758A"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+</ScrollView>
